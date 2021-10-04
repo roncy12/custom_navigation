@@ -1,0 +1,96 @@
+{{#if children}}
+<a class="navPages-action has-subMenu{{#if is_active}} activePage{{/if}}"
+   href="{{url}}"
+   data-collapsible="navPages-{{id}}"
+>
+    {{name}}
+    <i class="icon navPages-action-moreIcon" aria-hidden="true">
+        <svg><use xlink:href="#icon-chevron-down" /></svg>
+    </i>
+</a>
+<div class="navPage-subMenu" id="navPages-{{id}}" aria-hidden="true" tabindex="-1">
+
+  
+    <ul class="navPage-subMenu-list">
+        <li class="navPage-subMenu-item d-none">
+            
+            <span>{{name}}</span>
+            <a class="navPage-subMenu-action navPages-action"
+               href="{{url}}"
+               aria-label="{{lang 'category.view_all.name' category=name}}"
+            >
+                {{lang 'category.view_all.name' category=name}}
+            </a>
+            {{#each children}}
+                <a class="navPage-subMenu-action navPages-action{{#if is_active}} activePage{{/if}}"
+                href="{{url}}"
+                aria-label="{{name}}" ><span>{{name}}</span>
+            {{/each}}
+         </a>
+
+        </li>
+        {{#each children}}
+            <li class="navPage-subMenu-item">
+                {{#if children}}
+                    <a class="navPage-subMenu-action navPages-action has-subMenu{{#if is_active}} activePage{{/if}}"
+                       href="{{url}}"
+                       aria-label="{{name}}"
+                    >
+                   
+                        <span>{{name}}</span>
+                        <span class="collapsible-icon-wrapper"
+                            data-collapsible="navPages-{{id}}"
+                            data-collapsible-disabled-breakpoint="medium"
+                            data-collapsible-disabled-state="open"
+                            data-collapsible-enabled-state="closed"
+                        >
+                            <i class="icon navPages-action-moreIcon" aria-hidden="true">
+                                <svg><use xlink:href="#icon-chevron-down" /></svg>
+                            </i>
+                        </span>
+                    </a>
+                    <ul class="navPage-childList" id="navPages-{{id}}">
+                        {{#each children}}
+                        <li class="navPage-childList-item">
+                            <a class="navPage-childList-action navPages-action{{#if is_active}} activePage{{/if}}"
+                               href="{{url}}"
+                               aria-label="{{name}}"
+                            >
+                                {{name}}
+                            </a>
+                        </li>
+                        {{/each}}
+                    </ul>
+                {{else}}
+                    <a class="navPage-subMenu-action navPages-action{{#if is_active}} activePage{{/if}}"
+                       href="{{url}}"
+                       aria-label="{{name}}"
+                    >
+
+                    <span>{{name}}</span>
+ 		             <img class="mt-2 mb-2" src="{{cdn (concat '..img/nav/' (concat  (lowercase (dashcase name)) '.png'))}}"  />
+                      
+                      {{#if (lowercase (dashcase name)) '===' "adjustable-frames"}}
+                        <span>Start at $199.00</span>
+                      {{/if}}
+                      {{#if (lowercase (dashcase name)) '===' "platform-beds"}}
+                         <span>Start at $130.00</span>
+                     {{/if}}
+                     {{#if (lowercase (dashcase name))  '===' "metal-frames"}}
+                          <span>Start at $80.00</span>
+                     {{/if}}
+                    </a>
+                {{/if}}
+            </li>
+        {{/each}}
+    </ul>
+</div>
+{{else}}
+<a class="navPages-action{{#if is_active}} activePage{{/if}}"
+   href="{{url}}"
+   aria-label="{{name}}"
+>
+
+<span>{{name}}</span>
+</a>
+{{/if}}
