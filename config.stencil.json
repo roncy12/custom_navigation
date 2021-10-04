@@ -1,8 +1,7 @@
 {
   "customLayouts": {
     "product": {
-      "alternate-product.html":"/test-url/",
-      "Hybrid-mattress.html": "/green-tea-memory-foam-bed-mattres/"
+      "alternate-product.html":"/test-url/"
  
 
     },

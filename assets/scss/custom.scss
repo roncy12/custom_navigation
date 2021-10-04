@@ -4880,6 +4880,7 @@ html, body{
     background: #fff;
     top: 108px;
     border-top: 1px solid #ccc;
+    border-left: 0px solid;
 }
 .navPages-action.is-open {
     background-color: #fff;
@@ -4907,6 +4908,18 @@ span.nav-title {
     font-weight: bold;
 }
 .nav-price{
-    color: #4a72c6;
+    color: #4a72c6 !important;
     text-transform: initial;
+}
+
+ul.navPage-subMenu-list.bed-nav {
+    display: unset !important;
+}
+
+.custom-bed-nav>.navPage-subMenu {
+    width: 75%;
+}
+
+li.navPage-subMenu-item-parent, li.navPage-subMenu-item-child {
+    border-bottom: 1px solid #ccc;
 }

@@ -8,16 +8,19 @@
         <svg><use xlink:href="#icon-chevron-down" /></svg>
     </i>
 </a>
+
 <div class="navPage-subMenu" id="navPages-{{id}}" aria-hidden="true" tabindex="-1">
+
+    {{#if (lowercase (dashcase name)) '===' "bedding" }}    
+      {{> components/common/bedding-nav}}
+    {{/if}}
     <ul class="navPage-subMenu-list">
-        <li class="navPage-subMenu-item">
-            <a class="navPage-subMenu-action navPages-action"
-               href="{{url}}"
-               aria-label="{{lang 'category.view_all.name' category=name}}"
-            >
-                {{lang 'category.view_all.name' category=name}}
-            </a>
-        </li>
+
+
+
+
+        {{#inArray (split "bases,toppers" ",") (lowercase (dashcase name))}} 
+        
         {{#each children}}
             <li class="navPage-subMenu-item">
                 {{#if children}}
@@ -25,7 +28,8 @@
                        href="{{url}}"
                        aria-label="{{name}}"
                     >
-                        {{name}}
+                   
+                        <span>{{name}}</span>
                         <span class="collapsible-icon-wrapper"
                             data-collapsible="navPages-{{id}}"
                             data-collapsible-disabled-breakpoint="medium"
@@ -50,15 +54,41 @@
                         {{/each}}
                     </ul>
                 {{else}}
+
                     <a class="navPage-subMenu-action navPages-action{{#if is_active}} activePage{{/if}}"
                        href="{{url}}"
                        aria-label="{{name}}"
                     >
-                        {{name}}
+
+                    <span>{{name}}</span>
+ 		             
+                    <img class="mt-2 mb-2" src="{{cdn (concat '..img/nav/' (concat  (lowercase (dashcase name)) '.png'))}}"  />
+                      <!--BASES -->
+                      {{#if (lowercase (dashcase name)) '===' "adjustable-frames"}}
+                        <span  class="mt-0 nav-price">Start at <b>$199.00</b></span>
+                      {{/if}}
+                      {{#if (lowercase (dashcase name)) '===' "platform-beds"}}
+                         <span  class="mt-0 nav-price">Start at <b>$130.00</b></span>
+                     {{/if}}
+                     {{#if (lowercase (dashcase name))  '===' "metal-frames"}}
+                          <span  class="mt-0 nav-price">Start at <b>$80.00</b></span>
+                     {{/if}}
+                     <!--TOPPERS -->
+                     {{#if (lowercase (dashcase name))  '===' "2-5-inch-gel-memory-foam-mattress-topper"}}
+                         <span  class="mt-0 nav-price">Start at <b>$50.00</b></span>
+                    {{/if}}
+                    {{#if (lowercase (dashcase name))  '===' "3-inch-down-alternative-mattress-topper"}}
+                      <span  class="mt-0 nav-price">Start at <b>$60.00</b></span>
+                    {{/if}}
+                    {{#if (lowercase (dashcase name))  '===' "carboncool-lt-omniphase-topper"}}
+                        <span  class="mt-0 nav-price">Start at <b>$135.00</b></span>
+                    {{/if}}
+                     <!--BEDDING -->
                     </a>
                 {{/if}}
             </li>
         {{/each}}
+        {{/inArray}}
     </ul>
 </div>
 {{else}}
@@ -66,6 +96,7 @@
    href="{{url}}"
    aria-label="{{name}}"
 >
-    {{name}}
+
+<span>{{name}}</span>
 </a>
 {{/if}}
