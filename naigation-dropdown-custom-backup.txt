@@ -1,25 +1,15 @@
-<div class="navPage-subMenu navPage-subMenu-horizontal custom-dropdown mt-5 border-top-0" id="navPages-{{id}}" aria-hidden="true" tabindex="-1">
+<div class="navPage-subMenu navPage-subMenu-horizontal custom-dropdown" id="navPages-{{id}}" aria-hidden="true" tabindex="-1">
     <ul class="navPage-subMenu-list">
         <li class="navPage-subMenu-item-parent d-none">
             <a class="navPage-subMenu-action navPages-action navPages-action-depth-max" href="{{url}}">{{lang 'category.view_all.name' category=name}}</a>
         </li>
               
-        {{#if (lowercase (dashcase name)) '===' "blankets" }}  
-                {{#each categories}}
-                    {{json categories}}
-                    {{#if id '==' ../category_id }}
-                        <section>
-                            <h3 class="page-heading">{{../../heading}}</h3>
-                            <div class="ajaxproduct" data-ap-category-url="{{url}}" data-show="3" data-row="1">
-                            </div>
-                        </section>
-                    {{/if}}
-                {{/each}} 
-                <ul class="navPage-subMenu-list w-100">
+        {{#if (lowercase (dashcase name)) '===' "blankets" }}   
+                <ul class="navPage-subMenu-list w-75 mr-0 ml-auto">
                     <li class="navPage-subMenu-item">
-                        <span class="nav-title">Weekender-sherpa-blanket</span>
+                        <span class="nav-title">WEEKENDER Sherpa Blanket</span>
                             <a class="navPage-subMenu-action p-0 mb-0 navPages-action{{#if is_active}} activePage{{/if}}"
-                            href="{{url}}"
+                            href="/green-tea-memory-foam-bed-mattres/"
                             aria-label="{{name}}">
                                 <img class="mt-2 mb-2" src="{{cdn  '..img/nav/Weekender-sherpa-blanket.png'}}"  />
                             </a>
@@ -35,7 +25,7 @@
             </ul>
         {{/if}}
         {{#if (lowercase (dashcase name)) '===' "pillows" }}   
-        <ul class="navPage-subMenu-list w-100">
+        <ul class="navPage-subMenu-list w-75 mr-0 ml-auto">
             <li class="navPage-subMenu-item">
                 <span class="nav-title">Zoned Activedough +</span>
                     <a class="navPage-subMenu-action p-0 mb-0 navPages-action{{#if is_active}} activePage{{/if}}"
@@ -55,7 +45,7 @@
             </ul>
         {{/if}}
         {{#if (lowercase (dashcase name)) '===' "mattress-protector" }}   
-        <ul class="navPage-subMenu-list w-100">
+        <ul class="navPage-subMenu-list w-75 mr-0 ml-auto">
             <li class="navPage-subMenu-item">
                 <span class="nav-title">PR1ME® Smooth Mattress Protector</span>
                     <a class="navPage-subMenu-action p-0 mb-0 navPages-action{{#if is_active}} activePage{{/if}}"
@@ -75,7 +65,7 @@
             </ul>
         {{/if}}
         {{#if (lowercase (dashcase name)) '===' "sheets" }}   
-            <ul class="navPage-subMenu-list w-100">
+            <ul class="navPage-subMenu-list w-75 mr-0 ml-auto">
                 <li class="navPage-subMenu-item">
                     <span class="nav-title">Italian Artisan Sheet Set</span>
                         <a class="navPage-subMenu-action p-0 mb-0 navPages-action{{#if is_active}} activePage{{/if}}"
@@ -113,5 +103,17 @@
     </ul>
 </div>
 
+<script>
+    $(document).ready(function() {
+        if ($(".navPage-subMenu.is-open")){
+            $(".display-this").show();
+        }
+        if($( ".navPages-action-depth-max.has-subMenu.is-open")){
+            $(".display-this").hide();
+        }
+
+
+}); 
+</script>
 
 

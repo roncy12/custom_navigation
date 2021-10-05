@@ -14,7 +14,7 @@
     {{#if (lowercase (dashcase name)) '===' "bedding" }}    
       {{> components/common/bedding-nav}}
     {{/if}}
-    <ul class="navPage-subMenu-list gg">
+    <ul class="navPage-subMenu-list">
 
         {{#inArray (split "bases,toppers" ",") (lowercase (dashcase name))}}    
         {{#each children}}
@@ -96,7 +96,6 @@
 <span>{{name}}</span>
 </a>
 {{/if}}
-
 
 
 
