@@ -1,114 +1,60 @@
-<div class="navPage-subMenu navPage-subMenu-horizontal custom-dropdown mt-5 border-top-0" id="navPages-{{id}}" aria-hidden="true" tabindex="-1">
-    <ul class="navPage-subMenu-list">
+<div class="navPage-subMenu navPage-subMenu-horizontal custom-dropdown mt-3 border-top-0 justify-content-between" id="navPages-{{id}}" aria-hidden="true" tabindex="-1">
+    <ul class="navPage-subMenu-list slide-navv _nav-open-flag">
         <li class="navPage-subMenu-item-parent d-none">
-            <a class="navPage-subMenu-action navPages-action navPages-action-depth-max" href="{{url}}">{{lang 'category.view_all.name' category=name}}</a>
+            <a class="navPage-subMenu-action navPages-action navPages-action-depth-max d-none" href="{{url}}">{{lang 'category.view_all.name' category=name}}</a>
+            <img class="mt-2 mb-2" src="{{cdn (concat '..img/nav/' (concat  (lowercase (dashcase name)) '.png'))}}"  />
         </li>
-              
-        {{#if (lowercase (dashcase name)) '===' "blankets" }}  
-                {{#each categories}}
-                    {{json categories}}
-                    {{#if id '==' ../category_id }}
-                        <section>
-                            <h3 class="page-heading">{{../../heading}}</h3>
-                            <div class="ajaxproduct" data-ap-category-url="{{url}}" data-show="3" data-row="1">
-                            </div>
-                        </section>
-                    {{/if}}
-                {{/each}} 
-                <ul class="navPage-subMenu-list w-100">
-                    <li class="navPage-subMenu-item">
-                        <span class="nav-title">Weekender-sherpa-blanket</span>
-                            <a class="navPage-subMenu-action p-0 mb-0 navPages-action{{#if is_active}} activePage{{/if}}"
-                            href="{{url}}"
-                            aria-label="{{name}}">
-                                <img class="mt-2 mb-2" src="{{cdn  '..img/nav/Weekender-sherpa-blanket.png'}}"  />
-                            </a>
-                            <p class="mt-0 nav-price">Starts at <b>$13.00</b></p>                    
-                    </li>
-                    <li class="navPage-subMenu-item">
-                        <span class="nav-title">Anchor Weight Blanket</span>
-                            <a class="navPage-subMenu-action p-0 mb-0 navPages-action{{#if is_active}} activePage{{/if}}" href="{{url}}" aria-label="{{name}}">
-                                <img class="mt-2 mb-2" src="{{cdn  '..img/nav/anchor-weight-blanket.png'}}"  />       
-                            </a>
-                            <p class="mt-0 nav-price">Starts at <b>$54.00</b></p>
-                    </li>
-            </ul>
-        {{/if}}
-        {{#if (lowercase (dashcase name)) '===' "pillows" }}   
-        <ul class="navPage-subMenu-list w-100">
-            <li class="navPage-subMenu-item">
-                <span class="nav-title">Zoned Activedough +</span>
-                    <a class="navPage-subMenu-action p-0 mb-0 navPages-action{{#if is_active}} activePage{{/if}}"
-                    href="/green-tea-memory-foam-bed-mattres/"
-                    aria-label="{{name}}">
-                        <img class="mt-2 mb-2" src="{{cdn  '..img/nav/Zone-active-dough.png'}}"  />
-                    </a>
-                    <p class="mt-0 nav-price">Starts at <b>$40.00</b></p>                    
-            </li>
-            <li class="navPage-subMenu-item">
-                <span class="nav-title">Gelled Microfiber®</span>
-                    <a class="navPage-subMenu-action p-0 mb-0 navPages-action{{#if is_active}} activePage{{/if}}" href="{{url}}" aria-label="{{name}}">
-                        <img class="mt-2 mb-2" src="{{cdn  '..img/nav/Gelled-microfiber.png'}}"  />       
-                    </a>
-                    <p class="mt-0 nav-price">Starts at <b>$70.00</b></p>
-                    </li>
-            </ul>
-        {{/if}}
-        {{#if (lowercase (dashcase name)) '===' "mattress-protector" }}   
-        <ul class="navPage-subMenu-list w-100">
-            <li class="navPage-subMenu-item">
-                <span class="nav-title">PR1ME® Smooth Mattress Protector</span>
-                    <a class="navPage-subMenu-action p-0 mb-0 navPages-action{{#if is_active}} activePage{{/if}}"
-                    href="/green-tea-memory-foam-bed-mattres/"
-                    aria-label="{{name}}">
-                        <img class="mt-2 mb-2" src="{{cdn  '..img/nav/prime-smooth-mattress-protector.png'}}"  />
-                    </a>
-                    <p class="mt-0 nav-price">Starts at <b>$23.00</b></p>                    
-            </li>
-            <li class="navPage-subMenu-item">
-                <span class="nav-title">Five 5ided® Mattress Protector</span>
-                    <a class="navPage-subMenu-action p-0 mb-0 navPages-action{{#if is_active}} activePage{{/if}}" href="{{url}}" aria-label="{{name}}">
-                        <img class="mt-2 mb-2" src="{{cdn  '..img/nav/five-sided-mattress-protector.png'}}"  />       
-                    </a>
-                    <p class="mt-0 nav-price">Starts at <b>$30.00</b></p>
-                    </li>
-            </ul>
-        {{/if}}
-        {{#if (lowercase (dashcase name)) '===' "sheets" }}   
-            <ul class="navPage-subMenu-list w-100">
-                <li class="navPage-subMenu-item">
-                    <span class="nav-title">Italian Artisan Sheet Set</span>
-                        <a class="navPage-subMenu-action p-0 mb-0 navPages-action{{#if is_active}} activePage{{/if}}"
-                        href="/green-tea-memory-foam-bed-mattres/"
-                        aria-label="{{name}}">
-                            <img class="mt-2 mb-2" src="{{cdn  '..img/nav/italian-artisan-set.png'}}"  />
-                        </a>
-                        <p class="mt-0 nav-price">Starts at <b>$82.00</b></p>                    
-                </li>
-                <li class="navPage-subMenu-item">
-                    <span class="nav-title">600 TC Cotton-Blen Sheet Set</span>
-                        <a class="navPage-subMenu-action p-0 mb-0 navPages-action{{#if is_active}} activePage{{/if}}" href="{{url}}" aria-label="{{name}}">
-                            <img class="mt-2 mb-2" src="{{cdn  '..img/nav/cotton-blend-sheet-set.png'}}"  />       
-                        </a>
-                        <p class="mt-0 nav-price">Starts at <b>$32.00</b></p>
-                        </li>
-                    </ul>
-        {{/if}}
-
-
           {{#each children}}
-            <li class="navPage-subMenu-item-child d-none">
-                <p class="json"> {{json name}}</p>
+            <li class="navPage-subMenu-item-child border-bottom-0">
+                <!-- <p class="json"> {{json name}}</p> -->
                 {{#if children}}
                     <a class="navPage-subMenu-action navPages-action navPages-action-depth-max has-subMenu{{#if is_active}} activePage{{/if}}" href="{{url}}" data-collapsible="navPages-{{id}}">
                         {{name}}<i class="icon navPages-action-moreIcon" aria-hidden="true"><svg><use xlink:href="#icon-chevron-down" /></svg></i>
                     </a>
+                   
                     {{> components/common/navigation-dropdown}}
 
                 {{else}}
-                    <a class="navPage-subMenu-action navPages-action{{#if is_active}} activePage{{/if}}" href="{{url}}">{{name}}</a>
+
+                {{#if (lowercase (dashcase name)) '===' "weekender-600-thread-count-cotton-blend-sheet-set" }}                 
+                    <a class="navPage-subMenu-action  w-48 p-0 navPages-action{{#if is_active}} activePage{{/if}}" href="{{url}}">600 TC Cotton-Blend Sheet Set
+                        <img class="mt-2 mb-2" src="{{cdn (concat '..img/nav/' (concat  (lowercase (dashcase name)) '.png'))}}"  />
+                    </a>
+                    <p class="mt-0 nav-price">Starts at <b>$32.00</b></p>
+               
+                {{else}}
+                      <a class="navPage-subMenu-action  w-48 p-0 navPages-action{{#if is_active}} activePage{{/if}}" href="{{url}}">{{name}}
+                       <img class="mt-2 mb-2" src="{{cdn (concat '..img/nav/' (concat  (lowercase (dashcase name)) '.png'))}}"  />
+                     </a>
+
+                    {{#if (lowercase (dashcase name)) '===' "weekender-sherpa-blanket" }}  
+                        <p class="mt-0 nav-price">Starts at <b>$13.00</b></p>    
+                    {{/if}}
+                    {{#if (lowercase (dashcase name)) '===' "anchor-weighted-blanket" }}      
+                        <p class="mt-0 nav-price">Starts at <b>$54.00</b></p>
+                    {{/if}}
+                    {{#if (lowercase (dashcase name)) '===' "zoned-activedough-cooling-gel" }}   
+                        <p class="mt-0 nav-price">Starts at <b>$40.00</b></p>                  
+                    {{/if}}
+                    {{#if (lowercase (dashcase name)) '===' "gelled-microfiber" }}   
+                        <p class="mt-0 nav-price">Starts at <b>$70.00</b></p>
+                    {{/if}}
+                    {{#if (lowercase (dashcase name)) '===' "pr1me-smooth-mattress-protector" }}   
+                        <p class="mt-0 nav-price">Starts at <b>$23.00</b></p> 
+                    {{/if}} 
+                    {{#if (lowercase (dashcase name)) '===' "five-5ided-smooth-mattress-protector" }}                  
+                        <p class="mt-0 nav-price">Starts at <b>$30.00</b></p>
+                    {{/if}}
+                    {{#if (lowercase (dashcase name)) '===' "italian-artisan-sheet-set" }}   
+                        <p class="mt-0 nav-price">Starts at <b>$82.00</b></p>   
+                    {{/if}}
+
                 {{/if}}
+
+                {{/if}}
+                <a class="navPage-subMenu-action navPages-action navPages-action-depth-max d-none" href="{{url}}">Browse All</a>
             </li>
+
         {{/each}}
     </ul>
 </div>

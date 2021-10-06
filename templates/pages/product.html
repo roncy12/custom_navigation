@@ -20,14 +20,17 @@ product:
     {{/each}}
 
     <div itemscope itemtype="http://schema.org/Product">
-               {{#contains product.title "Green"}}
-                     {{> components/products/custom-green-mattress schema=true settings=../settings schema=true}}
-              {{/contains}}
-              {{#contains product.title "Hybrid"}}
-                  {{> aoc-custom/components/products/custom-hybrid-mattress schema=true settings=../settings schema=true}}
-            {{/contains}}
-    
+        {{#contains product.title "Green"}}
+            {{> components/products/custom-green-mattress schema=true settings=../settings schema=true}}
+        {{/contains}}
+        {{#contains product.title "Hybrid"}}
+            {{> aoc-custom/components/products/custom-hybrid-mattress schema=true settings=../settings schema=true}}
+        {{else}}     
+            {{> components/products/custom-green-mattress schema=true settings=../settings schema=true}}
+        {{/contains}}
         <div style="display:none;" >
+
+
             {{{region name="product_below_content"}}}
     
             {{#if product.videos.list.length}}

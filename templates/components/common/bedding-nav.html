@@ -1,12 +1,26 @@
-<ul class="navPage-subMenu-list bed-nav navPage-subMenu-horizontal mlc mt-4" id="navPages-{{id}}" aria-hidden="true" tabindex="-1">
+<ul class="navPage-subMenu-list bed-nav navPage-subMenu-horizontal mlc mt-2" id="navPages-{{id}}" aria-hidden="true" tabindex="-1">
     <li class="navPage-subMenu-item-parent w-20">
         <a class="navPage-subMenu-action navPages-action navPages-action-depth-max" href="{{url}}">{{lang 'category.view_all.name' category=name}}</a>
+       
     </li>
     {{#each children}}
         <li class="navPage-subMenu-item-child w-20">
             {{#if children}}
+            <!-- {{#if (lowercase (dashcase name)) '===' "blankets" }} 
+                <a class="navPage-subMenu-action navPages-action navPages-action-depth-max has-subMenu open" href="{{url}}" data-collapsible="navPages-{{id}}">
+                    {{name}}                
+                    <i class="icon navPages-action-moreIcon" aria-hidden="true">
+                        <svg><use xlink:href="#icon-chevron-down" /></svg>
+                    </i>
+                </a> 
+            {{/if}} -->
+                {{#each categories}}
+                  <P> {{name}} </P>
+                {{/each}}  
+
                 <a class="navPage-subMenu-action navPages-action navPages-action-depth-max has-subMenu{{#if is_active}} activePage{{/if}}" href="{{url}}" data-collapsible="navPages-{{id}}">
                     {{name}}
+
                    
                     <i class="icon navPages-action-moreIcon" aria-hidden="true">
                         <svg><use xlink:href="#icon-chevron-down" /></svg>

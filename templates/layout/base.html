@@ -233,6 +233,7 @@
                   });
                 });
           </script>
+
           <script>
                 $(document).ready(function(){
                     var slick_option = {
@@ -261,7 +262,45 @@
 
                 });
         </script>
+        <script>
+            $(document).ready(function(){        
+         
+                  if($(".navPages > ul.navPages-list > li.navPages-item:hover> a + div.navPage-subMenu")){                   
+                      // $('._nav-open-flag').addClass('is-open');
+                  }
+            });
+
+          </script>
           
+        <script>
+                $(document).ready(function(){
+                    var slick_option = {
+                        "dots": false,
+                        "mobileFirst": true,
+                        "slidesToShow": 2,
+                        "slidesToScroll": 2,
+                        "autoplay": false,
+                    "infinite": false
+                    };
+
+                  $('.slide-navv').each(function(){
+                    $(this).not('.slick-initialized').slick(slick_option);
+                  });
+
+                    $('.navPage-subMenu-action.navPages-action.navPages-action-depth-max.has-subMenu').on('hover click mousemove' , function(){
+                      var _slickContainer = $(this).parent().find('.slide-navv');
+                      if( _slickContainer.length > 0){
+                            _slickContainer[0].slick.refresh();	 
+                      }
+                    });
+
+                    $(window).on('resize orientationchange', function() {
+                        $('.slide-navv').slick('resize');
+                    });
+
+                });
+        </script>
+
           <script type="text/javascript">
 
 
