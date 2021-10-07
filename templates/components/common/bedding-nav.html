@@ -14,14 +14,9 @@
                     </i>
                 </a> 
             {{/if}} -->
-                {{#each categories}}
-                  <P> {{name}} </P>
-                {{/each}}  
-
                 <a class="navPage-subMenu-action navPages-action navPages-action-depth-max has-subMenu{{#if is_active}} activePage{{/if}}" href="{{url}}" data-collapsible="navPages-{{id}}">
                     {{name}}
-
-                   
+                 
                     <i class="icon navPages-action-moreIcon" aria-hidden="true">
                         <svg><use xlink:href="#icon-chevron-down" /></svg>
                     </i>
@@ -34,4 +29,8 @@
             {{/if}}
         </li>
     {{/each}}
+    <li class="navPage-subMenu-item-parent w-20">
+        <a class="navPage-subMenu-action navPages-action navPages-action-depth-max" href="{{url}}">Browse All</a>
+       
+    </li>
 </ul>

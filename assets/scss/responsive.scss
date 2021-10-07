@@ -357,8 +357,37 @@ a.like-us {
     width: 60%;
 }
 }
+@media only screen and (max-width: 1280px) {
+    .navPages ul {
+        list-style: none;
+        text-transform: uppercase;
+        // margin-left: 25em;
+        // width: 55%;
+    }
+    a.navPages-action {
+        color: #132448 !important;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-decoration: none;
+        font-size: 12px;
+        text-transform: unset;
+        text-transform: capitalize;
+        margin-top: 0em;
+        // padding: 0;
+    }
+}
+
 
 @media only screen and (max-width: 1260px) {
+    .navPages ul {
+        list-style: none;
+        text-transform: uppercase;
+        // margin-left: 25em;
+        width: 85%;
+    }
+    a.navPages-action {
+        padding: 1rem 11px;
+    }
     .another-mattress.cert-div {
         text-align: left;
         position: absolute;
@@ -434,6 +463,7 @@ a.like-us {
     }
 }
 
+
 @media only screen and (max-width: 1200px) {
 
 /** Homepage **/
@@ -465,7 +495,7 @@ header.header.header-bannerimg.sticky-fix {
     list-style: none;
     text-transform: uppercase;
     margin-left: 25em;
-    width: 53%;
+    width: 55%;
 }
 .heroCarousel-slide .heroCarousel-image-wrapper {
     margin-top: 9em;
@@ -484,7 +514,8 @@ a.navPages-action {
     font-size: 12px;
     text-transform: unset;
     text-transform: capitalize;
-    margin-top: 2em;
+    margin-top: 0em;
+    // padding: 0;
 }
 .”blog” {
 
@@ -711,7 +742,7 @@ article div.header-logo-image-container {
     text-transform: uppercase;
     margin-left: 28em;
     margin-top: 0em;
-    width: 60%;
+    width: 55%;
 }
 
     .flex-container {
@@ -1031,7 +1062,7 @@ a.navPages-action {
     margin-right: auto;
 }
 .navPages ul {
-    width: 55%;
+    width: 50%;
     list-style: none;
     text-transform: uppercase;
     margin-left: 25em;

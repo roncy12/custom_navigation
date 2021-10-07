@@ -4988,44 +4988,115 @@ ul.navPage-subMenu-list.bed-nav > li.navPage-subMenu-item-child:hover > a.navPag
 .w-48{
     width: 98%!important;
 }
-
-/*HOVER*/
-#menu .navPages ul.navPages-list > li.navPages-item:hover> a  + div.navPage-subMenu {
-    display: block !important;
-    width: 100%;
-    left:0;
-    position: fixed;
-    background: #fff;
-    top: 99px;
-    border-top: 1px solid #ccc;
-    border-left: 0px solid;
-    transition: 0.5s all 0.5s
-  }
-  #menu .navPages ul.navPages-list > li.navPages-item:not(:hover)> a  + div.navPage-subMenu {
-    transition: 5s all 5s
-  }
-
-#menu .navPages ul.navPage-subMenu-list > li.navPage-subMenu-item-child:hover> a  + div.custom-bed-nav > .navPage-subMenu.navPage-subMenu-horizontal {
-    display: block !important;
-    left:0;
-    position: fixed;
-    background: #fff;
-    top: 99px;
-    border-top: 1px solid #ccc;
-    border-left: 0px solid;
-    transition: 0.5s all 0.5s
-}
-#menu .navPages ul.navPage-subMenu-list > li.navPage-subMenu-item-child:not(:hover)> a  + div.custom-bed-nav > .navPage-subMenu.navPage-subMenu-horizontal {
-    transition: 5s all 5s
-}
-  @media all and (max-width:800px) {
-  #menu .navPages ul.navPages-list > li.navPages-item:hover > a + div.navPage-subMenu {
-      display: none;
-  }
-  #menu .navPages ul.navPages-list > li.navPages-item > a + div.navPage-subMenu.is-open {
-      display: block;
-  }
-  } 
 .slide-navv > .slick-list{
     margin: 0 !important;
 }
+
+/*HOVER*/
+@media screen and (min-width:800px) {
+        #menu .navPages ul.navPages-list > li.navPages-item:hover> a  + div.navPage-subMenu {
+            display: block !important;
+            width: 100%;
+            left:0;
+            position: fixed;
+            background: #fff;
+            top: 99px;
+            border-top: 1px solid #ccc;
+            border-left: 0px solid;
+            transition: 0.5s all 0.5s
+        }
+        #menu .navPages ul.navPages-list > li.navPages-item:not(:hover)> a  + div.navPage-subMenu {
+            transition: 5s all 5s
+        }
+
+        #menu .navPages ul.navPage-subMenu-list > li.navPage-subMenu-item-child:hover> a  + div.custom-bed-nav > .navPage-subMenu.navPage-subMenu-horizontal {
+            display: block !important;
+            left:0;
+            position: fixed;
+            background: #fff;
+            top: 99px;
+            border-top: 1px solid #ccc;
+            border-left: 0px solid;
+            transition: 0.5s all 0.5s
+        }
+        #menu .navPages ul.navPage-subMenu-list > li.navPage-subMenu-item-child:not(:hover)> a  + div.custom-bed-nav > .navPage-subMenu.navPage-subMenu-horizontal {
+            transition: 5s all 5s
+        }
+
+}
+  @media all and (max-width:800px) {
+    #menu .navPages ul.navPages-list > li.navPages-item:hover > a + div.navPage-subMenu {
+        display: none;
+    }
+    #menu .navPages ul.navPages-list > li.navPages-item > a + div.navPage-subMenu.is-open {
+        display: block;
+    }
+    #menu .navPages ul.navPages-list > li.navPages-item > a + div.navPage-subMenu.is-open {
+            position: unset;
+            background: unset;
+            top: unset;
+            border-top: 1px solid #ccc;
+            border-left: 0px solid;
+        }
+        ul.navPage-subMenu-list.w-50 {
+            width: 100% !important;
+            display: block !important;
+        }
+        span.nav-title {
+            text-align: left !important;
+            display: block;
+            margin-left: 2rem;
+            color: #fff !important;
+            font-size: 16px;
+            font-weight: normal;
+        }
+        a.navPage-subMenu-action.p-0.mb-0.navPages-action>img {
+            display: none;
+        }
+        .navPage-subMenu-item .nav-price {
+            display: none !important;
+        }
+        .navPages-action.has-subMenu.is-open {
+            background-color: unset;
+        }
+
+  } 
+// =========================================================
+/*Hybrid Mattress */
+
+.green-matt-features.hybrid {
+    background: url(../img/new-prodpage/certipur-banner.png);
+    width: 100%;
+    display: grid;
+    place-content: center;
+    place-items: center;
+    justify-content: center;
+    padding: unset;
+    position: relative;
+    background-size: 100% 100%;
+
+    @media screen and (max-width: 568px){
+        padding: 10rem 0;
+        height: unset;
+    }
+}
+.green-matt-features.hybrid > img {
+    position: relative;
+}
+
+.hybrid-absolute-con{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    color: #173456;
+}
+
+.grn-ftr-text.hybrid>h4, .grn-ftr-text.hybrid>p{
+    color: #173456;
+}
+ul.check-blue.hybrid li {
+    margin-top: 1rem;
+}
+//===========================================================

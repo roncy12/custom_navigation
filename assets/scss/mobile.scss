@@ -525,7 +525,7 @@ div > a.reviewreal-button {
 
 @media only screen and (max-width: 800px) {
     .navPages-container.is-open {
-        display: block;
+        display: block !important;
         padding-top: 55px;
         z-index: 20;
         left: 0;
