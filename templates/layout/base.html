@@ -9,7 +9,7 @@
 
         <link href="{{ head.favicon }}" rel="shortcut icon">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <!-- <link rel="stylesheet" type="text/css" href="cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> -->
 
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -105,31 +105,31 @@
 <script type="text/javascript">
 
         var $animation_elements = document.querySelector('.animation-element');
-        var $window = document.querySelector(window);
+        // var $window = document.querySelector(window);
 
-        function check_if_in_view() {
-          var window_height = $window.height();
-          var window_top_position = $window.scrollTop();
-          var window_bottom_position = (window_top_position + window_height);
+ function check_if_in_view() {
+//           var window_height = $window.height();
+//           var window_top_position = $window.scrollTop();
+//           var window_bottom_position = (window_top_position + window_height);
          
-          $.each($animation_elements, function() {
-            var $element = $(this);
-            var element_height = $element.outerHeight();
-            var element_top_position = $element.offset().top;
-            var element_bottom_position = (element_top_position + element_height);
+//           $.each($animation_elements, function() {
+//             var $element = $(this);
+//             var element_height = $element.outerHeight();
+//             var element_top_position = $element.offset().top;
+//             var element_bottom_position = (element_top_position + element_height);
          
-            //check to see if this current container is within viewport
-            if ((element_bottom_position >= window_top_position) &&
-                ((element_top_position+60) <= window_bottom_position)) {
-              $element.addClass('in-view');
-            } else {
-//                $element.removeClass('in-view');
-            }
-          });
+//             //check to see if this current container is within viewport
+//             if ((element_bottom_position >= window_top_position) &&
+//                 ((element_top_position+60) <= window_bottom_position)) {
+//               $element.addClass('in-view');
+//             } else {
+// //                $element.removeClass('in-view');
+//             }
+//           });
         }
 
-        $window.on('scroll resize', check_if_in_view);
-        $window.trigger('scroll');        
+        // $window.on('scroll resize', check_if_in_view);
+        // $window.trigger('scroll');        
         </script>
 
             <script type="text/javascript">

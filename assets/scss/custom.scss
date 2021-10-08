@@ -669,7 +669,7 @@ a.test-mattress-button {
     border-top: transparent;
     /* padding: 3rem 0; */
     position: relative;
-    background: url(https://cdn11.bigcommerce.com/s-z2qdisybty/product_images/uploaded_images/vector-smart-object1.png?t=1582162975&_ga=2.40243946.977186237.1582159027-2022119561.1571639426);
+    background: url("https://cdn11.bigcommerce.com/s-z2qdisybty/product_images/uploaded_images/vector-smart-object1.png?t=1582162975&_ga=2.40243946.977186237.1582159027-2022119561.1571639426");
     background-color: #132448;
     padding: 0;
 }
@@ -898,7 +898,7 @@ span.logo-links {
 
 /* BLOG */
 .image-banner {
-    background-image: url(https://cdn11.bigcommerce.com/s-z2qdisybty/product_images/uploaded_images/blog-banner.jpg?t=1599722308&amp;_ga=2.46110564.1918111745.1599697146-2022119561.1571639426);
+    background-image: url('https://cdn11.bigcommerce.com/s-z2qdisybty/product_images/uploaded_images/blog-banner.jpg?t=1599722308&amp;_ga=2.46110564.1918111745.1599697146-2022119561.1571639426');
     background-size: cover;
     display: block;
     margin-top: 9em;
@@ -2142,7 +2142,7 @@ input+.terms-showMore {
     margin: 10px 0;
     color: #174567;
     font-weight: 600;
-    background-image: url(show.png);
+    // background-image: url(show.png);
     background-repeat: no-repeat;
     background-position: 100% 50%;
     
@@ -2292,7 +2292,7 @@ input:checked+.terms-showMore #close{
     text-align: center;
     width: 100%;
     padding: 40px 10%;
-    background: url(../img/certicifation-moon-bg.png);
+    background: url('../img/certicifation-moon-bg.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -2307,7 +2307,7 @@ input:checked+.terms-showMore #close{
 }
 
 .certification-banner {
-    background: url(../img/certification-bottom-bg.png);
+    background: url('../img/certification-bottom-bg.png');
     background-repeat: no-repeat;
     width: 100%;
     margin: 0 auto;
@@ -2323,7 +2323,7 @@ input:checked+.terms-showMore #close{
 }
 
 .certification-bottom {
-    background: url(../img/certification-bottom-bg.png);
+    background: url('../img/certification-bottom-bg.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-size: 100% 39em;
@@ -2341,7 +2341,7 @@ input:checked+.terms-showMore #close{
 
 /* CUSTOM MATTRESSES */
  .FAQS-categ {
-    background: url(https://cdn11.bigcommerce.com/s-z2qdisybty/product_images/uploaded_images/family-image1.jpg?t=1582179008&_ga=2.40622442.977186237.1582159027-2022119561.1571639426);
+    background: url('https://cdn11.bigcommerce.com/s-z2qdisybty/product_images/uploaded_images/family-image1.jpg?t=1582179008&_ga=2.40622442.977186237.1582159027-2022119561.1571639426');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -3501,7 +3501,7 @@ img.like-us-img {
 
  
 .cta-istruth {
-    background: url(https://cdn11.bigcommerce.com/s-z2qdisybty/product_images/uploaded_images/is-parallax-pattern.png?t=1623642972&_ga=2.224919322.1496872644.1623634006-1835193253.1617777202);
+    background: url('https://cdn11.bigcommerce.com/s-z2qdisybty/product_images/uploaded_images/is-parallax-pattern.png?t=1623642972&_ga=2.224919322.1496872644.1623634006-1835193253.1617777202');
     background-repeat: no-repeat;
     height: 500px;
     width: 100%;
@@ -3755,7 +3755,7 @@ padding: 70px;
 }
 
 .cta-istruth {
-    background: url(https://cdn11.bigcommerce.com/s-z2qdisybty/product_images/uploaded_images/is-parallax-pattern.png?t=1623642972&_ga=2.224919322.1496872644.1623634006-1835193253.1617777202);
+    background: url('https://cdn11.bigcommerce.com/s-z2qdisybty/product_images/uploaded_images/is-parallax-pattern.png?t=1623642972&_ga=2.224919322.1496872644.1623634006-1835193253.1617777202');
     background-repeat: no-repeat;
     height: 500px;
     width: 100%;
@@ -5065,7 +5065,7 @@ ul.navPage-subMenu-list.bed-nav > li.navPage-subMenu-item-child:hover > a.navPag
 /*Hybrid Mattress */
 
 .green-matt-features.hybrid {
-    background: url(../img/new-prodpage/certipur-banner.png);
+    background: url('../img/new-prodpage/certipur-banner.png');
     width: 100%;
     display: grid;
     place-content: center;
@@ -5073,7 +5073,7 @@ ul.navPage-subMenu-list.bed-nav > li.navPage-subMenu-item-child:hover > a.navPag
     justify-content: center;
     padding: unset;
     position: relative;
-    background-size: 100% 100%;
+    background-size: cover;
 
     @media screen and (max-width: 568px){
         padding: 10rem 0;
@@ -5090,13 +5090,393 @@ ul.navPage-subMenu-list.bed-nav > li.navPage-subMenu-item-child:hover > a.navPag
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
-    color: #173456;
+    color: #18253f;
 }
 
 .grn-ftr-text.hybrid>h4, .grn-ftr-text.hybrid>p{
-    color: #173456;
+    color: #18253f;
 }
+
+
+.prodview-sizechart.green-matt.mt-5.hybrid {
+    background: unset;
+    h3{
+        color: #18253f;
+    }
+    p{
+        color: #18253f;
+    }
+}
+.text-center.d-block.hybrid{
+    color: #18253f; font-size: 18px; margin-bottom: 5em;
+}
+.prodview-anatomy.green-anatomy.hybrid{
+    margin-bottom: 5rem;
+    align-items: center;
+    div.green-anatomy-div{
+        width:49%;
+        p{
+            color: #18253f;
+        }
+    }
+
+/*Take A Closer Look*/
+    div.hybrid-animation{
+        padding:0 5%;
+        display: grid;
+        place-content: center;
+        h4:first-child{
+            color:#18253f; font-weight: 500; font-size: 28px; text-transform: inherit;
+        }
+        h4.last-child{
+            color:#18253f; font-weight: bold; font-size: 28px; text-transform: capitalize; margin-top: 0;
+        }
+        .hybrid-list-1{
+            list-style-image: url('../img/new-prodpage/architecture/hybrid-icon-1.png');
+        }
+        .hybrid-list-2{
+            list-style-image: url('../img/new-prodpage/architecture/Hybrid_icon_-02.png');
+        }
+        .hybrid-list-3{
+            list-style-image: url('../img/new-prodpage/architecture/Hybrid_icon_-03.png');
+        }
+        .hybrid-list-4{
+            list-style-image: url('../img/new-prodpage/architecture/Hybrid_icon_-04.png');
+        }
+        .hybrid-list-5{
+            list-style-image: url('../img/new-prodpage/architecture/Hybrid_icon_-05.png');
+        }
+        
+    }
+}
+
 ul.check-blue.hybrid li {
     margin-top: 1rem;
 }
+
+/*You Think Hybrid Mattress Is For You*/
+.prodview-advantage.green-mattress-ques.hybrid {
+    background: url('https://cdn11.bigcommerce.com/s-z2qdisybty/product_images/uploaded_images/is-parallax-pattern.png?t=1623642972&_ga=2.224919322.1496872644.1623634006-1835193253.1617777202');
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 3%;
+    background-attachment: fixed;
+    transform-style: preserve-3d;
+    perspective: 1px;
+    padding: 50px;
+    h3, p{
+        color: #fff;
+    }
+    div>div{
+        h4 , p{
+            color: #fff;
+        }
+    }
+    div.prodview-advantage-con{
+        @media screen and (max-width: 992px) {
+            max-width: 100%;
+        }
+        @media screen and (max-width: 768px) {
+            max-width: 100%;
+        }
+        @media screen and (max-width: 736px) {
+            max-width: 100%;
+        }
+    }
+}
+
+.sub-prodview-podimg.green-matt-sub.hybrid{
+    @media screen  and (max-width: 667px){
+        width: 100%;
+    }
+    div{
+        @media screen  and (max-width: 667px){
+            width: 40%;
+        }
+        @media screen  and (max-width: 480px){
+            width: 50%;
+        }
+    }
+}
+
+/*Stamped*/ 
+#stamped-reviews-widget[data-widget-type=carousel] .stamped-carousel-scroll .stamped-reviews-message {
+    margin-left: 0 !important;
+}
+
+#stamped-reviews-widget[data-widget-type=carousel] .stamped-carousel-scroll .stamped-reviews-image {
+    display: none !important;
+}
+
+/*Frequently Asked Question*/ 
+.FAQS-categ.green-faq-categ.mt-2.hybrid{
+
+    i#close {
+        padding-left: 0.1em;
+        margin-top: 0;
+    }
+    background: #fff;
+    .faqs-content.hybrid{
+        p{
+            text-align: center;
+             color: #fff;
+        }
+        h4 , p{
+        color: #18253f !important;
+        }
+        div>div{
+            border-bottom: 1px solid #18253f !important;
+        }
+        div>label.terms-showMore, div>label.terms-showMore i {
+            color: #18253f !important;
+            margin-bottom: 0.5rem;
+        }
+        div>p{
+            text-align: left !important;
+        }
+    }
+}
+
+/*You May Also Like*/
+.like-section {
+    h4{
+        text-align: center;
+        color: #18253f !important;
+        font-weight: bold;
+        margin-bottom: 4rem;
+    }
+    .two-mattress-section {
+        display: flex;
+        justify-content: space-evenly;
+        max-width: 80%;
+        margin: 0 auto;
+        @media screen and (max-width: 1080px) {
+            max-width: 90%;
+        }
+        @media screen and (max-width: 900px) {
+            max-width: 100%;
+        }
+        @media screen and (max-width: 667px) {
+           flex-direction: column;
+           max-width: 80%;
+        }
+        @media screen and (max-width: 480px) {
+            max-width: 85%;
+        }
+        div.mattress-container:last-child{
+            @media screen and (max-width: 667px) {
+                margin-top: 1rem;
+            }
+        }
+
+        div.mattress-container{
+            width: 48%;
+            position: relative;
+            @media screen and (max-width: 667px) {
+                width: 100%;
+            }
+            div>img{
+                    width: 100%;
+            }
+            div>span{
+                position: absolute;
+                top: 25px !important;
+                left: 25px !important;
+                padding: 5px 15px;
+                border-radius: 15px;
+                color: white;
+                background-color: #4a72c6;
+                @media screen and (max-width: 667px) {
+                    left: 10px !important;
+                    font-size: 10px;
+                }
+            }
+            div>div.product-shop-now{
+                position: absolute;
+                bottom: 25px !important;
+                left: 10px !important;
+                padding: 5px 5px;
+                border-radius: 15px;
+                color: white;
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                @media screen and (max-width: 1200px) {
+                    left: 0px !important;
+                    padding: 5px 10px;
+                }
+                @media screen and (max-width: 992px) {
+                    left: 0 !important;
+                }
+                
+                
+                div>h2{
+                    @media screen and (max-width: 1200px) {
+                        font-size: 18px;
+                    }
+                    @media screen and (max-width: 480px) {
+                        font-size: 14px;
+                    }
+                }
+
+                div>p{
+                    @media screen and (max-width: 1309px) {
+                        font-size: 14px;
+                    }
+                    @media screen and (max-width: 992px) {
+                        font-size: 12px;
+                    }
+                    @media screen and (max-width: 480px) {
+                        font-size: 8px;
+                    }
+                }
+
+                div.w-70{
+                    width: 70%;
+                    @media screen and (max-width: 1309px) {
+                        width: 60% !important;
+                    }
+                    @media screen and (max-width: 992px) {
+                        width: 80% !important;
+                    }
+                }
+                div.w-30{
+                    width: 30%;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    @media screen and (max-width: 1309px) {
+                        width: 40%;
+                        justify-content: center;
+                    }
+
+                    a{
+                        background: #18253f;
+                        color: #fff;
+                        padding: 11px 50px;
+                        border-radius: 5px;
+                        margin-top: 1rem;
+                        text-decoration: none;
+                        @media screen and (max-width: 480px) {
+                            padding: 10px 40px;
+                            margin-top: 2rem;
+                        }
+
+                    }
+                }
+            }
+
+        }
+    }
+}
+ 
+/* See Why People Iconic */
+.see-why-people-section {
+    display: flex;
+    justify-content: center;
+    background: url("../img/new-prodpage/reviews-footer-banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 4rem 0;
+    @media screen and (max-width: 736px) {
+        flex-direction: column;
+        padding: 2rem;
+    }
+    @media screen and (max-width: 554px) {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    div:last-child{
+        @media screen and (max-width: 736px) {
+            width: 50%;
+            margin: 0 auto !important;
+            margin-top: 1rem !important;
+        }
+        @media screen and (max-width: 480px) {
+            width: 55%;
+        }
+    }
+    div{        
+        h2, p{
+            text-align:center;
+            color: #fff;
+            margin-top:0;
+        }
+
+        h2{
+            @media screen and (max-width: 554px) {
+                font-size: 1.1rem;
+            }
+            @media screen and (max-width: 480px) {
+                font-size: 0.9rem;
+            }
+            @media screen and (max-width: 300px) {
+                font-size: 0.8rem;
+            }
+        } 
+        p{
+            font-size: 1.25rem;
+            @media screen and (max-width: 554px) {
+                font-size: 1rem;
+            }
+            @media screen and (max-width: 480px) {
+                font-size: 0.8rem;
+            }
+            @media screen and (max-width: 300px) {
+                font-size: 0.6rem;
+            }
+        }    
+        a{
+            border-color: #fff;
+            color: #132448;
+            text-decoration: none;
+            text-transform: capitalize;
+            background: #fff;
+            padding: 15px 15px 15px 15px;
+            font-weight: 700;
+            border-radius: 5px;
+            width: auto;
+            text-align: center;
+            margin-top: 0rem;
+            display: block;
+            @media screen and (max-width: 480px) {
+                padding: 7px 15px 7px 15px;
+            }
+            @media screen and (max-width: 300px) {
+                width: auto;
+            }
+        }
+    }
+}
+
+
+// Product Size
+.grn-matt-form .cus-options.hybrid {
+    display: unset;
+    width: unset;
+    margin: unset; 
+    vertical-align: unset; 
+    padding: unset; 
+    justify-content: unset; 
+}
+.grn-matt-form .cus-options.hybrid > div{
+    width: 100%;
+}
+.cus-options.hybrid .form-select--small, .form-select--date{
+    background-position: right 1rem top 1rem;
+    height: 3.285714rem;
+    max-width: 100rem;
+}
+
+.productView-options.grn-matt-opt.hybrid{
+    margin-top: -1em;   
+}
+
+.hybrid .form-field.form-field--stock label.form-label.form-label--alternate {
+    background: #4a72c5;
+}
+
 //===========================================================

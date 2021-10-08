@@ -20,9 +20,7 @@ product:
     {{/each}}
 
     <div itemscope itemtype="http://schema.org/Product">
-        {{#contains product.title "Green"}}
-            {{> components/products/custom-green-mattress schema=true settings=../settings schema=true}}
-        {{/contains}}
+ 
         {{#contains product.title "Hybrid"}}
             {{> aoc-custom/components/products/custom-hybrid-mattress schema=true settings=../settings schema=true}}
         {{else}}     
